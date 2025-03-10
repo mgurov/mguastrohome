@@ -34,11 +34,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.ACTIONS_DEPLOY_PAGES }}
-          repository-name: mgurov/mgurov.github.io
-          publish_branch: main
-          publish_dir: ./public
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        publish_dir: ./public
+        personal_token: ${{ secrets.ACTIONS_DEPLOY_PAGES }}
+        external_repository: mgurov/mgurov.github.io
+        publish_branch: master
