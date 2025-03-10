@@ -37,3 +37,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.ACTIONS_DEPLOY_PAGES }}
+          repository-name: mgurov/mgurov.github.io
+          publish_branch: main
+          publish_dir: ./public
