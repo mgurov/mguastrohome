@@ -1,6 +1,10 @@
 
 const base = baseUrlNoEndingSlash();
 
+export function prefixInternalPath(pathOrUrl: string): string;
+export function prefixInternalPath(pathOrUrl: URL): string;
+export function prefixInternalPath(pathOrUrl: null): null;
+export function prefixInternalPath(pathOrUrl: undefined): undefined;
 export function prefixInternalPath(pathOrUrl: string | URL | null | undefined): string | null | undefined {
 
     if (null === pathOrUrl || undefined === pathOrUrl) {

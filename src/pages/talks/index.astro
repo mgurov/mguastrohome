@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import { prefixInternalPath } from '../../util';
+import MyImage from '../../components/MyImage.astro'
 
 const talks = (await getCollection('talks')).sort(
 	(a, b) => {
@@ -102,7 +103,7 @@ const talks = (await getCollection('talks')).sort(
 						talks.map((talk) => (
 							<li>
 								<a href={prefixInternalPath(`/talks/${talk.id}/`)}>
-									{talk.data.heroImage  && <img width={720} height={360} src={prefixInternalPath(talk.data.heroImage)} alt="" />}
+									{talk.data.heroImage  && <MyImage width={720} height={360} src={talk.data.heroImage} />}
 									<h4 class="title">{talk.data.title}</h4>
 									<p class="date">
 										<span>{talk.data.summary}</span>

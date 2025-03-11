@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import { prefixInternalPath } from '../../util';
+import MyImage from '../../components/MyImage.astro';
 
 const entries = (await getCollection('notes')).sort(
 	(a, b) => {
@@ -102,7 +103,7 @@ const entries = (await getCollection('notes')).sort(
 						entries.map((entry) => (
 							<li>
 								<a href={prefixInternalPath(`/notes/${entry.id}/`)}>
-									{entry.data.heroImage  && <img width={720} height={360} src={prefixInternalPath(entry.data.heroImage)} alt="" />}
+									{entry.data.heroImage  && <MyImage width={720} height={360} src={entry.data.heroImage} />}
 									<h4 class="title">{entry.data.title}</h4>
 									<p class="date">
 										<span>{entry.data.summary}</span>
