@@ -15,6 +15,14 @@ We have successfully used this strategy for back-end and front-end projects. It 
 
 We will use [Playwright](https://playwright.dev/) browser testing framework to demonstrate the key concepts of this technique.
 
+### External References
+
+https://engineering.atspotify.com/2018/01/testing-of-microservices
+
+#### Present 
+
+May 2025 [Testnet voorjaarsevenement 2025](https://www.testnet.org/evenement/entry/25926/). [code](https://github.com/mgurov/remix-router-tutorial-playwright/tree/talks/testnet_2025_05_14)
+
 #### Past
 
 January 2025 [ViennaJS Meetup](https://viennajs.org/en/meetup/viennajs-january-meetup) - a prototype delivery
