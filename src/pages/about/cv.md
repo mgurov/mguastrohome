@@ -6,19 +6,19 @@ layout: ../../layouts/GenericPost.astro
 
 ---
 
-jan 2021-now [iptiQ](https://www.iptiq.com/) Hoofddorp NL - insuretech · kotlin (back-end) · react · aws · dynamodb · sns / sqs · kafka · playwright 
+jan 2021-now [iptiQ](https://www.iptiq.com/) Hoofddorp NL - insuretech - Kotlin (back-end) · React · AWS · DynamoDB · SNS/SQS · Kafka · Playwright 
 
 As a Product Engineer, my primary role across multiple teams has been to streamline technical support operations and align the quality of deliverables with the company transition from startup to scale-up mode. And the teams were:
 
-CIL team - **Customer support platform** with policy and claim administration, phone call routing, SMS, email, task management etc. capabilities. Introduced the full-stack approach to the team, which was previously silo'ed between Front- and Back-end. Regained control over a sizeable legacy React.js application by redesigning the test strategy towards [extensive and thoughtful automatic test coverage](/talks/app-testing-with-playwright/).
+CIL team - **Customer support platform** with capabilities for policy and claim administration, call routing, SMS, email, task management. Introduced a full-stack approach to the team, which was previously silo'ed between Front- and Back-end. Regained control over a sizeable legacy React.js application by redesigning the test strategy towards [comprehensive and thoughtful automatic test coverage](/talks/app-testing-with-playwright/).
 
 Joined **Integrations** team to build integration with Dutch road authorities ([RDW](https://www.rdw.nl/) and [Roydata](https://www.seps.nl/roy-data/)). Main contribution in breaking the team paralysis in the face of seemingly insurmountable ambiguity in requirements, and readjusting the delivery process into an iterative one with early business involvement.
 
-**Payments** team - coached the team to build resilient payment processing in a distributed environment. Architected refactoring for more transparent processing of payments. Introduced team-owned UIs that drastically improved technical operational support efficiency. Sped up delivery process from once in month to continuous. 
+**Payments** team - coached the team to build resilient payment processing in a distributed environment. Led refactoring for more transparent processing of payments. Introduced team-owned UIs that drastically improved technical operational support efficiency. Sped up delivery process from once in month to continuous deployment. 
 
 ---
 
-2015-2020 [bol.com](https://bol.com) Utrecht NL - e-commerce - java · kotlin · go · docker · postgres · pub/sub · cypress · GCP (BigQuery,PubSub) · kubernetes
+2015-2020 [bol.com](https://bol.com) Utrecht NL - e-commerce - Java · Kotlin · Go · docker · Postgres · pub/sub · Cypress · GCP (BigQuery,PubSub) · Kubernetes
 
 Mainly with feature teams in Logistics and Purchasing domains, but also with platform teams. Liaison and advocate between feature and platform / DX teams.  Transition from Oracle-backed monoliths to Java and Kotlin microservice. From on-premise to cloud (GCP). 
 
@@ -35,7 +35,7 @@ Logistics. Landed at "logistics via bol" - partner delivery program similar to "
 
 ---
 
-2011 apr - 2015 [TomTom](https://www.tomtom.com) Amsterdam NL - navigation - java · SOA · angular · GWT
+2011 apr - 2015 [TomTom](https://www.tomtom.com) Amsterdam NL - navigation - Java · SOA · Angular · GWT
 
 Working with high load, distributed services environment. Cross-services refactorings. First successful visualizations for internal business stakeholders ([GWT](https://en.wikipedia.org/wiki/Google_Web_Toolkit) 😱, later angular). 
 
