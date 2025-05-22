@@ -6,7 +6,7 @@ layout: ../../layouts/GenericPost.astro
 
 ---
 
-jan 2021-now [iptiQ](https://www.iptiq.com/) Hoofddorp NL - insuretech - Kotlin (back-end) · React · AWS · DynamoDB · SNS/SQS · Kafka · Playwright 
+jan 2021-now [iptiQ](https://www.iptiq.com/) Hoofddorp NL - insuretech - Kotlin (back-end) · React · Typescript · AWS · DynamoDB · SNS/SQS · Kafka · Playwright 
 
 As a Product Engineer, my primary role across multiple teams has been to streamline technical support operations and align the quality of deliverables with the company transition from startup to scale-up mode. And the teams were:
 
