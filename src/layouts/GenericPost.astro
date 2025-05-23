@@ -13,7 +13,6 @@ type Props = CollectionEntry<'talks'>['data'];
 const {props} = Astro;
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
-console.log(images);
 let heroImageSrc = props.heroImage!! ? images[props.heroImage] : undefined;
 ---
 
@@ -71,7 +70,7 @@ let heroImageSrc = props.heroImage!! ? images[props.heroImage] : undefined;
 				</div>
 				<div class="prose">
 					<div class="title">
-						<h1>{props.title}</h1>
+						<h1 data-testid="page-title">{props.title}</h1>
 						<hr />
 					</div>
 					<slot />
