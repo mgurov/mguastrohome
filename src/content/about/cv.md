@@ -21,7 +21,7 @@ Joined **Integrations** team to build integration with Dutch road authorities ([
 
 ---
 
-2015-2020 [bol.com](https://bol.com) Utrecht NL - e-commerce - Java · Kotlin · Go · docker · Postgres · pub/sub · Cypress · GCP (BigQuery,PubSub) · Kubernetes
+2015-2020 [bol.com](https://bol.com) Utrecht NL - e-commerce - Java · Kotlin · Go · Docker · Postgres · Pub/Sub · Cypress · GCP (BigQuery,PubSub) · Kubernetes
 
 Mainly with feature teams in Logistics and Purchasing domains, but also with platform teams. Liaison and advocate between feature and platform / DX teams.  Transition from Oracle-backed monoliths to Java and Kotlin microservice. From on-premise to cloud (GCP). 
 
