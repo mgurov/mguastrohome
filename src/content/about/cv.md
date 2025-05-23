@@ -1,8 +1,11 @@
 ---
-title: "CV"
+title: "CV Mykola Gurov"
+hideTitleFromMainBody: true
 summary: "My curriculum vitae"
 hide_date: true
-layout: ../../layouts/GenericPost.astro
+---
+
+### Mykola Gurov - Curriculum Vitae
 
 ---
 
@@ -31,7 +34,7 @@ Purchasing & Supplier accounting. Recovered the domain from technical downfall. 
 Logistics. Landed at "logistics via bol" - partner delivery program similar to "Fulfillment by Amazon", a "tech excellence" team spearheading migration to microservices and from oracle to postgres. Revolutionized dev testing by broad use of docker containers, which was a relative novelty at the time.
 
 
-[more about my great time at bol...](/about/bol)
+[more about the great time at bol...](/about/bol)
 
 ---
 

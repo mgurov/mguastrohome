@@ -3,6 +3,7 @@ import { defineCollection, z } from 'astro:content';
 
 const genericSchema = z.object({
 	title: z.string(),
+	hideTitleFromMainBody: z.boolean().optional(),
 	summary: z.string(),
 	// Transform string to Date object
 	date: z.coerce.date().optional(),
@@ -22,4 +23,9 @@ const notes = defineCollection({
 	schema: genericSchema,
 }); 
 
-export const collections = { talks, notes };
+const about = defineCollection({
+	loader: glob({ base: './src/content/about', pattern: '**/*.{md,mdx}' }),
+	schema: genericSchema,
+}); 
+
+export const collections = { talks, notes, about };

@@ -1,17 +1,14 @@
 ---
-title: "Running"
-date: 2023-07-30T08:19:01+02:00
+title: "Mykola Runs"
 summary: "Where will I run"
-hide_date: true
 featured_image: "img/02-me-start-run.png"
-layout: ../../layouts/GenericPost.astro
 ---
-
-Sun 30 Mar 2025 12Km [Zandvoort Circuit Run 2025](https://www.zandvoortcircuitrun.nl/) with my team! 👫👫
 
 Sun 19 Oct 2025 full 😅 [Amsterdam Marathon](https://www.tcsamsterdammarathon.eu/)
 
 #### Previously seen at 
+
+Sun 30 Mar 2025 12Km [Zandvoort Circuit Run 2025](https://www.zandvoortcircuitrun.nl/) with my team! 👫👫
 
 Sat 21 Sep 2024 8Km [Damloop by night](https://www.nndamloop.nl/)
 
