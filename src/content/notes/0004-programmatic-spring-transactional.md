@@ -72,4 +72,6 @@ class SomeService(private val transactionally: Transactionally) {
 
 TODO: Testing reasons.
 
-Links: https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/data-access.html#transaction-declarative-annotations
+#### Links & References
+
+Spring's documentation: [Declarative Annotations](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/data-access.html#transaction-declarative-annotations), [Programmatic transactions](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/data-access.html#transaction-programmatic)
