@@ -9,9 +9,23 @@ weight: 2000
 ---
 import YoutubeLink from '../../components/YoutubeLink.astro'
 
-Mocking and stubbing are, without any doubt, important techniques for a modern software developer to master. But can there be too much of the mocking goodness?
+Mocking is an important testing technique to master. Modern frameworks are fun to use and isolate tested code from dependencies like a breeze. For many, testing becomes synonymous with mocking.
 
-In this presentation, I will argue that not all mocks are equally is good. I will offer two ways of decreasing the mock addition: refactoring for testability and climbing up the testing pyramid.
+But is there a downside to this power? 
+
+Yes. 
+
+Mocks tend to make our tests more verbose, dependent on implementation details and sometimes even telling an outright lie. 
+Mocks add accidental, unnecessary friction to the code changes.
+The power of mocking libraries makes "testability as a way to improve the code" a stylistic exercise. 
+
+I believe, the mock-infestation of tests is one of the major causes many are sceptical about the power of developer tests. 
+
+What if we could magically remove the mocks, and make tests like pre-2000's? I did this experiment once, and will share the outcomes in this presentation. 
+
+Not to say we should ban mocks, I'll offer a decision framework for when they are OK, and when it's better to avoid using mocks in tests, and what are alternatives. 
+
+The examples will be provided in Kotlin (backend) and typescript (react), and are intended to be readable by any technical audience.
 
 #### Inspiration
 
