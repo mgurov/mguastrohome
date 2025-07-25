@@ -9,7 +9,21 @@ hide_date: true
 
 ---
 
-jan 2021-now [iptiQ](https://www.iptiq.com/) Hoofddorp NL - insuretech - Kotlin (back-end) · React · Typescript · AWS · DynamoDB · SNS/SQS · Kafka · Playwright 
+##### Key facts
+
+* Improves teams
+* Loves legacy
+* Thorough universalist
+* Continuous delivery and testing
+* Public speaker
+
+##### Key Tech
+
+Kotlin (back-end) · Java · React · Go · Postgres · Docker · Playwright · GCP (BigQuery, PubSub) · Typescript · Kafka · Cypress · AWS (DynamoDB, SNS/SQS) · Kubernetes · Angular
+
+##### Work
+
+jan 2021-now [iptiQ](https://www.iptiq.com/) Hoofddorp NL - insuretech
 
 As a Product Engineer, my primary role across multiple teams has been to streamline technical support operations and align the quality of deliverables with the company transition from startup to scale-up mode. And the teams were:
 
@@ -21,7 +35,7 @@ Joined **Integrations** team to build integration with Dutch road authorities ([
 
 ---
 
-2015-2020 [bol.com](https://bol.com) Utrecht NL - e-commerce - Java · Kotlin · Go · Docker · Postgres · Pub/Sub · Cypress · GCP (BigQuery,PubSub) · Kubernetes
+2015-2020 [bol.com](https://bol.com) Utrecht NL - e-commerce
 
 Mainly with feature teams in Logistics and Purchasing domains, but also with platform teams. Liaison and advocate between feature and platform / DX teams.  Transition from Oracle-backed monoliths to Java and Kotlin microservice. From on-premise to cloud (GCP). 
 
@@ -38,7 +52,7 @@ Logistics. Landed at "logistics via bol" - partner delivery program similar to "
 
 ---
 
-2011 apr - 2015 [TomTom](https://www.tomtom.com) Amsterdam NL - navigation - Java · SOA · Angular · GWT
+2011 apr - 2015 [TomTom](https://www.tomtom.com) Amsterdam NL - navigation
 
 Working with high load, distributed services environment. Cross-services refactorings. First successful visualizations for internal business stakeholders ([GWT](https://en.wikipedia.org/wiki/Google_Web_Toolkit) 😱, later angular). 
 
