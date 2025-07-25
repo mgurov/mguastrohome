@@ -9,15 +9,15 @@ hide_date: true
 
 ---
 
-##### Key facts
-
 * Improves teams
 * Loves legacy
-* Thorough universalist
-* Continuous delivery and testing
+* Universalist with depth
+* Thorough testing
+* Continuous delivery with speed and quality
+* Distributed consistency and resilience
 * Public speaker
 
-##### Key Tech
+##### Tech
 
 Kotlin (back-end) · Java · React · Go · Postgres · Docker · Playwright · GCP (BigQuery, PubSub) · Typescript · Kafka · Cypress · AWS (DynamoDB, SNS/SQS) · Kubernetes · Angular
 
