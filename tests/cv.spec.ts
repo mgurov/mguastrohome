@@ -17,7 +17,7 @@ test('cv page displays CV title and key sections', async ({ page }) => {
 });
 
 for (const [text, url] of [
-  ['comprehensive and thoughtful automatic test coverage', "/talks/app-testing-with-playwright/"],
+  ['comprehensive and meaningful test coverage', "/talks/app-testing-with-playwright/"],
   ['trunk-based continuous delivery development', "/talks/trunk-based-delivery/"],
   ['extensive testing on production via gradual process takeover', "/talks/testing-on-production/"],
   ['more about the great time at bol', "/about/bol"],
