@@ -13,7 +13,7 @@ hide_date: true
 * Continuous delivery with speed and quality
 * Distributed consistency and resilience
 * Thorough meaningful automated testing
-* Universalist. With deep focus
+* Universalist. With laser focus
 * Loves legacy
 * Public speaker
 
@@ -56,7 +56,7 @@ Logistics. Landed at "logistics via bol" - partner delivery program similar to "
 
 2011 apr - 2015 [TomTom](https://www.tomtom.com) Amsterdam NL - navigation
 
-Working with high load, distributed services environment. Cross-services refactorings. First successful visualizations for internal business stakeholders ([GWT](https://en.wikipedia.org/wiki/Google_Web_Toolkit) 😱, later angular). 
+Working with high load, distributed services environment. Cross-services refactorings. First successful visualizations for internal business stakeholders ([GWT](https://en.wikipedia.org/wiki/Google_Web_Toolkit), later angular). 
 
 ----
 
