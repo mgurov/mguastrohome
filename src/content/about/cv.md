@@ -10,12 +10,14 @@ hide_date: true
 ---
 
 * Improves teams
-* Loves legacy
-* Universalist with depth
-* Thorough testing
 * Continuous delivery with speed and quality
 * Distributed consistency and resilience
+* Thorough meaningful automated testing
+* Universalist. With deep focus
+* Loves legacy
 * Public speaker
+
+<!-- Something about laying bridges between teams and the stakeholders?  -->
 
 ##### Tech
 
@@ -27,11 +29,11 @@ jan 2021-now [iptiQ](https://www.iptiq.com/) Hoofddorp NL - insuretech
 
 As a Product Engineer, my primary role across multiple teams has been to streamline technical support operations and align the quality of deliverables with the company transition from startup to scale-up mode. And the teams were:
 
-CIL team - **Customer support platform** with capabilities for policy and claim administration, call routing, SMS, email, task management. Introduced a full-stack approach to the team, which was previously silo'ed between Front- and Back-end. Regained control over a sizeable legacy React.js application by redesigning the test strategy towards [comprehensive and thoughtful automatic test coverage](/talks/app-testing-with-playwright/).
+CIL team - **Customer support platform** with capabilities for policy and claim administration, call routing, SMS, email, task management. Introduced a full-stack approach to the previously silo'ed (Front- v Back-end) team. Regained control over a sizeable legacy React.js application by redesigning the test strategy towards [comprehensive and meaningful test coverage](/talks/app-testing-with-playwright/). Shifted the team focus towards the user satisfaction and early problem detection with UI observability.
 
 Joined **Integrations** team to build integration with Dutch road authorities ([RDW](https://www.rdw.nl/) and [Roydata](https://www.seps.nl/roy-data/)). Main contribution in breaking the team paralysis in the face of seemingly insurmountable ambiguity in requirements, and readjusting the delivery process into an iterative one with early business involvement.
 
-**Payments** team - coached the team to build resilient payment processing in a distributed environment. Led refactoring for more transparent processing of payments. Introduced team-owned UIs that drastically improved technical operational support efficiency. Sped up delivery process from once in month to continuous deployment. 
+**Payments** team - coached the team to improve the reliability of the payment processing in a distributed environment. Led refactoring for more transparent processing of payments. Introduced team-owned UIs that drastically improved technical operational support efficiency. Sped up delivery process from once in months to continuous deployment. 
 
 ---
 
