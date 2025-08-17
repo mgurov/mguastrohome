@@ -1,0 +1,46 @@
+---
+interface Props {
+    hidden?: boolean;
+}
+const {hidden = false} = Astro.props;
+if (hidden) {
+    return;
+}
+---
+
+<style>
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        margin: 0;
+    }
+</style>
+
+<hr />
+
+<dl>
+    <dt>Home</dt>
+    <dd>Amsterdam</dd>
+
+    <dt>Nationality</dt>
+    <dd>NL</dd>
+
+    <dt>YOB</dt>
+    <dd>1979</dd>
+
+    <dt>Email</dt>
+    <dd>XXXX</dd>
+
+    <dt>Phone/Signal/Whatsup</dt>
+    <dd>+31XXX</dd>
+
+    <dt>More</dt>
+    <dd><a href="https://mgurov.github.io">https://mgurov.github.io</a></dd>
+</dl>
+

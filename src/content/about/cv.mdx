@@ -4,22 +4,22 @@ hideTitleFromMainBody: true
 summary: "My curriculum vitae"
 hide_date: true
 ---
+import DetailsHeader from '../../components/cv/DetailsHeader.astro'
+import SummaryBullets from '../../components/cv/SummaryBullets.astro'
 
-### Mykola Gurov - Curriculum Vitae
+### Mykola Gurov
+
+<DetailsHeader hidden />
+<SummaryBullets />
+
 
 ---
 
-* Improves teams and communication with users
-* Thorough meaningful automated testing
-* Continuous delivery with speed and quality
-* Distributed consistency and resilience
-* Universalist. With deep focus
-* Loves legacy
-* Public speaker
-
 ##### Tech
 
-Kotlin (back-end) · Java · React · Go · Postgres · Docker · Playwright · GCP (BigQuery, PubSub) · Typescript · Kafka · Cypress · AWS (DynamoDB, SNS/SQS) · Kubernetes · Angular · Jupyter (python)
+Kotlin (back-end) · Java · React · Go · Postgres · Docker · Playwright · GCP (BigQuery, PubSub) · Typescript · Kafka · AWS (DynamoDB, SNS/SQS) · Kubernetes · Jupyter (python)
+
+---
 
 ##### Work
 
@@ -37,15 +37,13 @@ Joined **Integrations** team to build an interface with Dutch road authorities (
 
 2015-2020 [bol.com](https://bol.com) Utrecht NL - e-commerce
 
-**Liaison and advocate** between feature and platform / DX teams. Transition from Oracle-backed monoliths to Java and Kotlin microservices. From on-premise to cloud (GCP). Created popular dev tools (internal with Go and React).
+Informal **liaison and advocate** between feature and platform / DX teams. Transition from Oracle-backed monoliths to Java and Kotlin microservices. From on-premise to cloud (GCP). Created popular dev tools (internal with Go and React).
 
 Teams & domains: 
 
 A **data-in-flight** platform team building bridge between operational and data-lake databases. Joined to develop and spread in usage a custom built **continuous data quality monitoring** tool. Built a tailored automated testing process that allowed to practice near continuous delivery to numerous installations across the organization. 
 
 Purchasing & Supplier accounting. Recovered the domain from technical downfall. Brought **testing and observability** practices to the level that allowed to move to **[trunk-based continuous delivery development](/talks/trunk-based-delivery/)**. Designed and built cross-dock service in close iterative collaboration with business stakeholders, featuring custom-built UIs for requirements analysis and observability, as well as [extensive testing on production via gradual process takeover](/talks/testing-on-production/). 
-
-<!-- Later, was involved as a domain expert / analyst in the redesign of a supplier accounting subsystem. !-->
 
 Landed at "logistics via bol" - a "startup withing a large organization" partner delivery program similar to the "Fulfillment by Amazon". A "tech excellence" team spearheading migration to microservices and from oracle to postgres. Revolutionized dev testing by shortening feedback loops with docker.
 

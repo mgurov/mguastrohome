@@ -1,0 +1,32 @@
+---
+interface Props {
+    hidden?: boolean;
+}
+const {hidden = false} = Astro.props;
+if (hidden) {
+    return;
+}
+---
+
+<style>
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        margin-bottom: 0.5rem;
+    }
+</style>
+
+<hr />
+
+<ul>
+    <li>Improves teams and communication with users</li>
+    <li>Thorough meaningful automated testing</li>
+    <li>Continuous delivery with speed and quality</li>
+    <li>Distributed consistency and resilience</li>
+    <li>Universalist. With deep focus</li>
+    <li>Loves legacy</li>
+    <li>Public speaker</li>
+</ul>
