@@ -2,44 +2,112 @@
 interface Props {
     hidden?: boolean;
 }
-const {hidden = false} = Astro.props;
+const { hidden = false } = Astro.props;
 if (hidden) {
     return;
 }
 ---
 
 <style>
-    ul {
-        margin: 0;
-        padding: 0;
+    .item-list {
         list-style: none;
+        padding: 0;
+        margin: 0;
     }
-    li {
-        margin-bottom: 0.5rem;
+
+    .item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.2rem 0;
     }
-    li.explanation {
-        margin-left: 0.5rem;
+
+    .item-title {
+        font-size: 1em;
+        opacity: 0.7;
+        flex-shrink: 0;
+        transition: all 1s ease;
+    }
+
+    .item-detail {
         color: gray;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: all 1s ease;
         font-size: 0.8em;
+        margin-left: 0.5rem;
+    }
+
+    .item:hover .item-title {
+        font-size: 1.1em;
+        transform: scale(1.05);
+        transform-origin: right center;
+        opacity: 1;
+    }
+
+    .item:hover .item-detail {
+        color: black;
+        white-space: normal;
+        font-size: 1em;
+    }
+
+    @media (max-width: 720px) {
+        .item-detail {
+            flex-basis: 100%;
+            white-space: nowrap;
+        }
+
+        .item:hover .item-detail {
+            white-space: normal;
+        }
+    }
+
+    @media print {
+        .item-detail {
+            white-space: normal;
+        }
     }
 </style>
 
 <hr />
 
-<h5>Highlights</h5>
+<h5>Highlights - alternative</h5>
 
-
-<ul>
-    <li>Improves teams</li>
-    <li class="explanation">By fostering empathic collaboration and improving the communication with users and stakeholders</li>
-    <li>Thorough meaningful automated testing</li>
-    <li class="explanation">Make test work for us, not against us</li>
-    <li>Continuous delivery with speed and quality</li>
-    <li class="explanation">Move fast and reliably, no breaking many things</li>
-    <li>Distributed consistency and resilience</li>
-    <li>Universalist. With deep focus</li>
-    <li>Loves legacy</li>
-    <li class="explanation">One just has to know how to cook this matured dish</li>
-    <li>Public speaker</li>
-    <li class="explanation">Not naturally born, but authentic and engaging</li>
+<ul class="item-list">
+    <li class="item">
+        <span class="item-title">Improves teams</span>
+        <span class="item-detail"
+            >By fostering empathic collaboration and improving the communication
+            with users and stakeholders</span
+        >
+    </li>
+    <li class="item">
+        <span class="item-title">Thorough meaningful automated testing</span>
+        <span class="item-detail">Make the tests work for us</span>
+    </li>
+    <li class="item">
+        <span class="item-title"
+            >Continuous delivery with speed and quality</span
+        >
+        <span class="item-detail">Move fast, no breaking things</span>
+    </li>
+    <li class="item">
+        <span class="item-title">Distributed consistency and resilience</span>
+    </li>
+    <li class="item">
+        <span class="item-title">Universalist. With deep focus</span>
+    </li>
+    <li class="item">
+        <span class="item-title">Loves legacy</span>
+        <span class="item-detail"
+            >One just has to know how to cook this matured dish</span
+        >
+    </li>
+    <li class="item">
+        <span class="item-title">Public speaker</span>
+        <span class="item-detail"
+            >Not naturally born, but authentic and engaging</span
+        >
+    </li>
 </ul>
