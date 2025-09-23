@@ -4,11 +4,12 @@ summary: "Where will I run"
 featured_image: "img/02-me-start-run.png"
 ---
 
-Sat 20 Sep 2023 5Mi [Damloop by night 🌃](https://www.damloop.com/5-miles) Zaandam
 
 Sun 19 Oct 2025 full 😅 [Amsterdam Marathon](https://www.tcsamsterdammarathon.eu/)
 
 #### Previously seen at 
+
+Sat 20 Sep 2023 5Mi [Damloop by night 🌃](https://www.damloop.com/5-miles) Zaandam
 
 Sun 30 Mar 2025 12Km [Zandvoort Circuit Run 2025](https://www.zandvoortcircuitrun.nl/) with my team! 👫👫
 
