@@ -3,13 +3,15 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://mgurov.github.io',
-	trailingSlash: "ignore",
-	integrations: [mdx(), sitemap()],
-	redirects: {
-    	"/cv/": "/about/cv/",
-		"/": "/about/",
+    site: 'https://mgurov.github.io',
+    trailingSlash: "ignore",
+    integrations: [mdx(), sitemap(), react()],
+    redirects: {
+        "/cv/": "/about/cv/",
+        "/": "/about/",
   	}
 });

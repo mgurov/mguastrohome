@@ -1,15 +1,17 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
-import { prefixInternalPath } from '../util';
-import { Image } from 'astro:assets';
-import type { ImageMetadata } from 'astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import { prefixInternalPath } from "../util";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
-const {props} = Astro;
+const { props } = Astro;
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
+const images = import.meta.glob<{ default: ImageMetadata }>(
+	"/src/assets/*.{jpeg,jpg,png,gif}",
+);
 let heroImageSrc = props.heroImage!! ? images[props.heroImage] : undefined;
 ---
 
@@ -62,30 +64,74 @@ let heroImageSrc = props.heroImage!! ? images[props.heroImage] : undefined;
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImageSrc && <Image width={1020} height={510} src={heroImageSrc()} alt="" />}
-					{!heroImageSrc && props.heroImage && <img width={1020} height={510} src={prefixInternalPath(props.heroImage)} alt="" />}
+					{
+						heroImageSrc && (
+							<Image
+								width={1020}
+								height={510}
+								src={heroImageSrc()}
+								alt=""
+							/>
+						)
+					}
+					{
+						!heroImageSrc && props.heroImage && (
+							<img
+								width={1020}
+								height={510}
+								src={prefixInternalPath(props.heroImage)}
+								alt=""
+							/>
+						)
+					}
 				</div>
 				<div class="prose">
-					{ props.hideTitleFromMainBody !== true && (
-						<div class="title">
-							<h1 data-testid="page-title">{props.bodyTitle || props.title}</h1>
-							<hr />
-						</div>
-					)}
+					{
+						props.hideTitleFromMainBody !== true && (
+							<div class="title">
+								<h1 data-testid="page-title">
+									{props.bodyTitle || props.title}
+								</h1>
+								<hr />
+							</div>
+						)
+					}
 					<slot />
 					<div class="date">
-						{props.date && <>Since <FormattedDate date={props.date} /></>} 
+						{
+							props.date && (
+								<>
+									Since <FormattedDate date={props.date} />
+								</>
+							)
+						}
 						{
 							props.updatedDate && (
 								<div class="last-updated-on">
-									Last updated on <FormattedDate date={props.updatedDate} />
+									Last updated on{" "}
+									<FormattedDate date={props.updatedDate} />
 								</div>
 							)
 						}
-					</div>	
 					</div>
+				</div>
 			</article>
 		</main>
 		<Footer />
-	</body>
+	</body><script>
+		import { animate, scroll } from "motion";
+
+		scroll(animate(
+			".hero-image",
+			{
+				opacity: [1 , 0], 
+				width: ["100%", "50%"] 
+			},
+			{ 
+				ease: "easeOut"
+			 },
+		));
+	</script>
+
+	<script></script>
 </html>
