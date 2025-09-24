@@ -10,5 +10,6 @@ export default defineConfig({
 	integrations: [mdx(), sitemap()],
 	redirects: {
     	"/cv/": "/about/cv/",
+		"/": "/about/",
   	}
 });
