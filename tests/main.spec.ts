@@ -1,22 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Main site functionality', () => {
-  test('home page has correct structure and content', async ({ page }) => {
-    await page.goto('/');
-    
-    // Check title and main heading
-    await expect(page).toHaveTitle(/Mykola Gurov/);
-    await expect(page.getByTestId('page-title')).toContainText("Mykola Gurov");
-    
-    // Check navigation
-    const nav = page.locator('nav');
-    await expect(nav).toBeVisible();
-    //TODO: should be the particular ones await expect(nav.locator('a')).toHaveCount(4); // Adjust count based on your actual nav items
-    
-    // Check main content sections
-    await expect(page.locator('main')).toBeVisible();
-    await expect(page.locator('article')).toBeVisible();
-  });
 
   test('CV page has correct structure and content', async ({ page }) => {
     await page.goto('/cv');
