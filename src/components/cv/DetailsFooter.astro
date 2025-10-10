@@ -1,0 +1,43 @@
+---
+interface Props {
+    hidden?: boolean;
+}
+const { hidden = false } = Astro.props;
+if (hidden) {
+    return;
+}
+---
+
+<style>
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 18px;
+    }
+    @media print {
+        dl {
+            font-size: 12px;
+        }
+    }
+
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        margin: 0;
+    }
+</style>
+
+<hr />
+
+<dl>
+    <dt>Education</dt>
+    <dd>
+        Ms. C., Social Informatics Taras Shevchenko National University of Kyiv,
+        Facluty of Cybernetics, 1996-2002
+    </dd>
+
+    <dt>Languages</dt>
+    <dd>UA · EN · NL (B2+) · DE (B1-) · RU</dd>
+</dl>

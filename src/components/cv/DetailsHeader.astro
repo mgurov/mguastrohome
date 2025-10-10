@@ -2,7 +2,7 @@
 interface Props {
     hidden?: boolean;
 }
-const {hidden = false} = Astro.props;
+const { hidden = false } = Astro.props;
 if (hidden) {
     return;
 }
@@ -13,6 +13,9 @@ if (hidden) {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
+        font-size: 20px;
+        margin-block-start: 0;
+        margin-block-end: 0;
     }
     dt {
         font-weight: bold;
@@ -20,9 +23,22 @@ if (hidden) {
     dd {
         margin: 0;
     }
+    @media print {
+        dl {
+            font-size: 14px;
+        }
+    }
 </style>
 
 <hr />
+
+<dl>
+    <dt>Email</dt>
+    <dd>mykola.xxxxx@gmail.com</dd>
+
+    <dt>Phone</dt>
+    <dd>+316xxxxxxxx</dd>
+</dl>
 
 <dl>
     <dt>Home</dt>
@@ -31,16 +47,6 @@ if (hidden) {
     <dt>Nationality</dt>
     <dd>NL</dd>
 
-    <dt>YOB</dt>
-    <dd>1979</dd>
-
-    <dt>Email</dt>
-    <dd>XXXX</dd>
-
-    <dt>Phone/Signal/Whatsup</dt>
-    <dd>+31XXX</dd>
-
     <dt>More</dt>
     <dd><a href="https://mgurov.github.io">https://mgurov.github.io</a></dd>
 </dl>
-

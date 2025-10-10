@@ -56,6 +56,11 @@ let heroImageSrc = props.heroImage!! ? images[props.heroImage] : undefined;
 			.last-updated-on {
 				font-style: italic;
 			}
+			@media print {
+				main {
+					font-size: 18px;
+				}
+			}
 		</style>
 	</head>
 
@@ -121,16 +126,18 @@ let heroImageSrc = props.heroImage!! ? images[props.heroImage] : undefined;
 	</body><script>
 		import { animate, scroll } from "motion";
 
-		scroll(animate(
-			".hero-image",
-			{
-				opacity: [1 , 0], 
-				width: ["100%", "50%"] 
-			},
-			{ 
-				ease: "easeOut"
-			 },
-		));
+		scroll(
+			animate(
+				".hero-image",
+				{
+					opacity: [1, 0],
+					width: ["100%", "50%"],
+				},
+				{
+					ease: "easeOut",
+				},
+			),
+		);
 	</script>
 
 	<script></script>

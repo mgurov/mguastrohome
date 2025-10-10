@@ -1,0 +1,98 @@
+---
+interface Props {
+    hidden?: boolean;
+}
+const { hidden = false } = Astro.props;
+if (hidden) {
+    return;
+}
+---
+
+<!-- Kudos to https://dryan.com/articles/finding-first-last-row-flex/ -->
+
+<style>
+    separated-list {
+        display: flow-root;
+
+        ul {
+            --horizontal-space: 0.5rem;
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* row-gap: 1rem; */
+            column-gap: var(--horizontal-space);
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            /*display: flex; /* collapses the space between the pipe and the contents */
+            /* flex-direction: row; */
+            /* align-items: center; */
+
+            &:not(:last-child, .last-of-row) {
+                &::after {
+                    content: "·";
+                    margin-inline-start: var(--horizontal-space);
+                }
+            }
+        }
+    }
+</style>
+
+<separated-list>
+    <ul>
+        <li>Java</li>
+        <li>Kotlin (back-end)</li>
+        <li>Playwright</li>
+        <li>Typescript</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>Go</li>
+        <li>Postgres</li>
+        <li>Docker</li>
+        <li>GCP (BigQuery, PubSub)</li>
+         <li>GCP</li>
+        <li>AWS</li>
+        <li>Kafka</li>
+        <li>AWS (DynamoDB, SNS/SQS)</li>
+        <li>Kubernetes</li>
+    </ul>
+</separated-list>
+
+<script>
+    class SeparatedList extends HTMLElement {
+        observer: ResizeObserver | null = null;
+
+        connectedCallback() {
+            this.observer = new ResizeObserver(this.resizeHandler);
+            this.observer.observe(this);
+        }
+
+        disconnectedCallback() {
+            this.observer?.disconnect();
+        }
+
+        resizeHandler = () => {
+            const items = this.querySelectorAll("li");
+            items.forEach((item, itemIndex) => {
+                const previousItem = items[itemIndex - 1];
+                const nextItem = items[itemIndex + 1];
+                item.classList.toggle(
+                    "first-of-row",
+                    !previousItem || item.offsetTop !== previousItem.offsetTop,
+                );
+                item.classList.toggle(
+                    "last-of-row",
+                    !nextItem || item.offsetTop !== nextItem.offsetTop,
+                );
+            });
+        };
+    }
+
+    customElements.define("separated-list", SeparatedList);
+</script>

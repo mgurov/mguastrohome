@@ -5,19 +5,21 @@ summary: "My curriculum vitae"
 hide_date: true
 ---
 import DetailsHeader from '../../components/cv/DetailsHeader.astro'
+import DetailsFooter from '../../components/cv/DetailsFooter.astro'
 import SummaryBullets from '../../components/cv/SummaryBullets.astro'
+import Tech from '../../components/cv/Tech.astro'
 
 ### Mykola Gurov
 
-<DetailsHeader hidden />
-<SummaryBullets />
+<DetailsHeader  />
+<SummaryBullets hidden />
 
 
 ---
 
 ##### Tech
 
-Kotlin (back-end) · Java · React · Go · Postgres · Docker · Playwright · GCP (BigQuery, PubSub) · Typescript · Kafka · AWS (DynamoDB, SNS/SQS) · Kubernetes · Jupyter (python)
+<Tech />
 
 ---
 
@@ -27,7 +29,7 @@ jan 2021-now [iptiQ](https://www.iptiq.com/) Hoofddorp NL - insuretech
 
 Product Engineer. Primarily focused on streamlining technical support operations and aligning the quality of deliverables with  an organisational transition from startup to scale-up.
 
-CIL team - **Customer support platform** with capabilities for policy administration, call routing, SMS, email, task management. Introduced a **full-stack approach** to the previously silo'ed (Front- v Back-end) team. Regained control over a sizeable legacy React.js application by redesigning the test strategy towards [comprehensive and meaningful test coverage](/talks/app-testing-with-playwright/). Shifted the team focus towards the user satisfaction and early problem detection with **UI observability**. Introduced python jupyter notebooks as an OPS tool. 
+CIL team - **Customer support platform** with capabilities for policy administration, call routing, SMS, email, task management. Introduced a **full-stack approach** to the previously silo'ed (Front- v Back-end) team. Regained control over a sizeable legacy React.js application by redesigning the test strategy towards [comprehensive and meaningful test coverage](/talks/app-testing-with-playwright/). Shifted the team focus towards the user satisfaction and early problem detection with **UI observability**. Introduced python notebooks as an OPS tool. 
 
 Joined **Integrations** team to build an interface with Dutch road authorities ([RDW](https://www.rdw.nl/) and [Roydata](https://www.seps.nl/roy-data/)). Broke the team paralysis in the face of seemingly insurmountable ambiguity in requirements. Readjusted the delivery process into an iterative one with early business stakeholders involvement.
 
@@ -58,10 +60,9 @@ Working with high load, distributed services environment. Cross-services refacto
 
 ----
 
-Before 2011 - Kyiv, UA. <span class="no-print">See LinkedIn ⤵️</span>
+Before 2011 - Kyiv, UA. <span class="no-print">See LinkedIn ⤵️</span> <span class="print-only">https://www.linkedin.com/in/mgurov</span>
 
-<span class="print-only">https://www.linkedin.com/in/mgurov</span>
+{/* In particular, 2005 - 2011 [Encodify](https://www.encodify.com/) - grew to Team Lead while developing a creative media workflow platform with rich customization and numerous on-premise deployments.   */}
 
-In particular, 2005 - 2011 [Encodify](https://www.encodify.com/) - grew to Team Lead while developing a creative media workflow platform with rich customization and numerous on-premise deployments.  
-
+<DetailsFooter />
 
