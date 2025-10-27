@@ -39,14 +39,14 @@ if (hidden) {
         margin-left: 0.5rem;
     }
 
-    .item:hover .item-title {
+    .item:hover .item-title,  .item-touched .item-title{
         font-size: 1.1em;
         transform: scale(1.05);
         transform-origin: right center;
         opacity: 1;
     }
 
-    .item:hover .item-detail {
+    .item:hover .item-detail, .item-touched .item-detail {
         color: black;
         white-space: normal;
         font-size: 1em;
@@ -58,7 +58,7 @@ if (hidden) {
             white-space: nowrap;
         }
 
-        .item:hover .item-detail {
+        .item:hover .item-detail, .item-touched .item-detail {
             white-space: normal;
         }
     }
@@ -69,6 +69,18 @@ if (hidden) {
         }
     }
 </style>
+
+<script>
+
+ document.querySelectorAll('.item').forEach(el => {
+  el.addEventListener('touchstart', () => {
+    el.classList.add('item-touched');
+  });
+  el.addEventListener('touchend', () => {
+    el.classList.remove('item-touched');
+  });
+});
+</script>
 
 <hr />
 
