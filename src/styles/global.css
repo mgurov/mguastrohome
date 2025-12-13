@@ -156,6 +156,19 @@ hr {
 	white-space: nowrap;
 }
 
+a {
+	text-decoration: underline dotted;
+	text-decoration-thickness: 1px;
+	color: inherit;
+}
+
+@page {
+    /* size: auto; */
+    /* margin: 0mm; */
+} 
+
+
+
 .print-only {
   display: none;
 }
@@ -167,10 +180,5 @@ hr {
 
   .print-only {
     display: inline;
-  }
-
-  a {
-    text-decoration: none;
-    color: #000; /* Optional: Ensures the link text is black for printing */
   }
 }
