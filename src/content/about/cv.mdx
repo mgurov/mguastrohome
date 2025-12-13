@@ -3,18 +3,20 @@ title: "CV Mykola Gurov"
 hideTitleFromMainBody: true
 summary: "My curriculum vitae"
 hide_date: true
+printMode: false
 ---
 import DetailsHeader from '../../components/cv/DetailsHeader.astro'
 import DetailsFooter from '../../components/cv/DetailsFooter.astro'
 import SummaryBullets from '../../components/cv/SummaryBullets.astro'
 import Tech from '../../components/cv/Tech.astro'
 
+
 ### Mykola Gurov 
 
 {/* software • delivery • continuous  • back-end  • front-end • data  */}
 
-<DetailsHeader hidden />
-<SummaryBullets />
+<DetailsHeader hidden={!frontmatter.printMode} />
+<SummaryBullets hidden={frontmatter.printMode} />
 
 
 ---
@@ -41,7 +43,7 @@ Joined **Integrations** team to build an interface with Dutch road authorities (
 
 2015-2020 [bol.com](https://bol.com) Utrecht NL - e-commerce
 
-Informal **liaison and advocate** between feature and platform / DX teams. Transition from Oracle-backed monoliths to Java and Kotlin microservices. From on-premise to cloud (GCP). Created popular dev tools (internal with Go and React).
+Informal **liaison and advocate** between feature and platform / DX teams. Transition from Oracle-backed monoliths to Java and Kotlin microservices. From on-premise to cloud (GCP). Created popular dev tools (internal with Go and React). [Public speaking](https://mgurov.github.io/talks/) at conferences and podcasts. 
 
 Teams & domains: 
 
@@ -66,5 +68,5 @@ Before 2011 - Kyiv, UA. <span class="no-print">See LinkedIn ⤵️</span> <span 
 
 {/* In particular, 2005 - 2011 [Encodify](https://www.encodify.com/) - grew to Team Lead while developing a creative media workflow platform with rich customization and numerous on-premise deployments.   */}
 
-<DetailsFooter hidden />
+<DetailsFooter hidden={!frontmatter.printMode} />
 
