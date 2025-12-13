@@ -162,13 +162,6 @@ a {
 	color: inherit;
 }
 
-@page {
-    /* size: auto; */
-    /* margin: 0mm; */
-} 
-
-
-
 .print-only {
   display: none;
 }
@@ -182,3 +175,12 @@ a {
     display: inline;
   }
 }
+
+@page {
+	@top-center {
+		content: ''
+	}
+	@bottom-center {
+		content: ''
+	}
+} 
