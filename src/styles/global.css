@@ -162,6 +162,14 @@ a {
 	color: inherit;
 }
 
+.new-page {
+    break-before: page;
+}
+
+.avoid-page-break {
+    break-inside: avoid;
+}
+
 .print-only {
   display: none;
 }
