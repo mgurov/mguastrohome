@@ -3,20 +3,20 @@ title: "CV Mykola Gurov"
 hideTitleFromMainBody: true
 summary: "My curriculum vitae"
 hide_date: true
-printMode: false
 ---
 import DetailsHeader from '../../components/cv/DetailsHeader.astro'
 import DetailsFooter from '../../components/cv/DetailsFooter.astro'
 import SummaryBullets from '../../components/cv/SummaryBullets.astro'
 import Tech from '../../components/cv/Tech.astro'
 
+export const printMode = import.meta.env.PUBLIC_PRINT_MODE;
 
 ### Mykola Gurov 
 
 {/* software • delivery • continuous  • back-end  • front-end • data  */}
 
-<DetailsHeader hidden={!frontmatter.printMode} />
-<SummaryBullets hidden={frontmatter.printMode} />
+<DetailsHeader hidden={!printMode} />
+<SummaryBullets hidden={printMode} />
 
 
 ---
@@ -71,5 +71,5 @@ Before 2011 - Kyiv, UA. <span class="no-print">See LinkedIn ⤵️</span> <span 
 
 {/* In particular, [Encodify](https://www.encodify.com/) · 2005-2011  - grew to Team Lead while developing a creative media workflow platform with rich customization and numerous on-premise deployments.   */}
 
-<DetailsFooter hidden={!frontmatter.printMode} />
+<DetailsFooter hidden={!printMode} />
 
