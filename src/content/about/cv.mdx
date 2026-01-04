@@ -23,7 +23,20 @@ export const printMode = import.meta.env.PUBLIC_PRINT_MODE;
 
 ##### Tech
 
-<Tech />
+<Tech items={[    "Java",
+    "Kotlin",
+    "Go",
+    "Typescript",
+    "React",
+    "Python",
+    "Playwright",
+    "Postgres",
+    "Docker",
+    "GCP (BigQuery, PubSub)",
+    "AWS (DynamoDB, SNS/SQS)",
+    "Kafka",
+    "Kubernetes",
+]} />
 
 ---
 
@@ -33,41 +46,56 @@ export const printMode = import.meta.env.PUBLIC_PRINT_MODE;
 
 Product Engineer. Primarily focused on streamlining technical support operations and aligning the quality of deliverables with  an organisational transition from startup to scale-up.
 
-CIL team - Customer support platform with capabilities for policy administration, call routing, SMS, email, task management. Introduced a **full-stack approach** to the previously silo'ed (Front- v Back-end) team. Regained control over a sizeable legacy React.js application by redesigning the **test strategy** towards [comprehensive and meaningful test coverage](/talks/app-testing-with-playwright/). Shifted the team focus towards the user satisfaction and early problem detection with **UI observability**. Introduced python notebooks as an OPS tool. 
+CIL team - Customer support platform with capabilities for policy administration, call routing, SMS, email, task management. Introduced a **full-stack approach** to the previously silo'ed (Front- v Back-end) team. Regained control over a sizeable legacy React.js application by redesigning the **test strategy** towards [comprehensive and meaningful test coverage](https://mgurov.github.io/talks/app-testing-with-playwright/). Shifted the team focus towards the user satisfaction and early problem detection with **UI observability**. Introduced python notebooks as an OPS tool. 
 
 Joined **Integrations** team to build an interface with Dutch road authorities ([RDW](https://www.rdw.nl/), [Roydata](https://www.seps.nl/roy-data/)). Broke team paralysis in the face of seemingly insurmountable ambiguity in requirements. Readjusted the delivery process for early business stakeholders involvement powered by custom-built augmented UI for decision making. 
 
 **Payments** team - coached to improve the reliability of the transaction processing in a distributed environment. Led refactoring for more transparent processing of payments. Introduced team-owned UIs that drastically improved technical operational support efficiency. Sped up delivery process from once in months to continuous deployment. 
 
-<div className='no-print'>
+<div style={{paddingTop: '5px', fontSize: '0.75em'}}>
+    <Tech items={['Kotlin', 'React', "Typescript", 'AWS DynamoDb', 'Python']} />
+</div>
+
+<div className='xxx-no-print'>
 ---
 </div>
 
-<div className='new-page'></div>
-
 [bol.com](https://bol.com) Utrecht NL · e-commerce · 2015-2020 
 
-Informal **liaison and advocate** between feature and platform / DX teams. Transition from Oracle-backed monoliths to Java and Kotlin microservices. From on-premise to cloud (GCP). Created popular internal dev tools (Go, React). Started [public speaking](https://mgurov.github.io/talks/) at conferences and podcasts. 
+
+Informal **liaison and advocate** between feature and platform / DX teams. As a feature teams representative, actively participated in transition from Oracle-backed monoliths to Java and Kotlin microservices, from on-premise to cloud (GCP) infrastructure. Created popular internal dev tools (Go, React). Numerous [public speaking](https://mgurov.github.io/talks/) engagements at conferences and podcasts. 
+
+<div className='xxnew-page'></div>
 
 Teams & domains: 
 
-A **data-in-flight** platform team building bridge between operational and data-lake databases. Joined to develop and spread in usage a custom built **continuous data quality monitoring** tool. Built a tailored automated testing process that allowed to practice near continuous delivery to numerous installations across the organization. 
+A **data-in-flight** platform team bridging between operational and data-lake databases. Joined to develop and spread in usage a custom built **continuous data quality monitoring** tool. Built a tailored automated testing process that allowed to practice near continuous delivery to numerous installations across the organization. 
 
-Purchasing & Supplier accounting. Recovered the domain from technical downfall. Brought **testing and observability** practices to the level that allowed to move to **[trunk-based continuous delivery development](/talks/trunk-based-delivery/)**. Designed and built cross-dock service in close iterative collaboration with business stakeholders, featuring custom-built UIs for requirements analysis and observability, as well as [extensive testing on production via gradual process takeover](/talks/testing-on-production/). 
+Purchasing & Supplier accounting. Recovered the domain from technical downfall. Brought **testing and observability** practices to the level that allowed to move to **[trunk-based continuous delivery development](https://mgurov.github.io/talks/trunk-based-delivery/)**. Designed and built cross-dock service in close iterative collaboration with business stakeholders, featuring custom-built UIs for requirements analysis and observability, as well as [extensive testing on production via gradual process takeover](https://mgurov.github.io/talks/testing-on-production/). 
 
-Logistics via Bol - a team spearheading migration from oracle to postgres and to microservices. Revolutionized dev testing by shortening feedback loops with docker.
+Logistics via Bol - a "startup within" business+tech team. Revolutionized dev testing by introducing docker for DB & messaging under test.
 
-<span class="no-print">[more about the great time at bol...](/about/bol)</span>
+<div style={{paddingTop: '5px', fontSize: '0.75em'}}>
+    <Tech items={['Java', 'Kotlin', 'Go', 'React', 'Postgres', 'Oracle', 'Messaging (GCP pub/sub)']} />
+</div>
+
+{!printMode && <a href="/about/bol">more about the great time at bol...</a>}
 
 ---
 
 [TomTom](https://www.tomtom.com) Amsterdam NL · navigation · 2011-2014
 
-Working with high load, distributed services environment. Cross-services refactorings. First successful visualizations for internal business stakeholders ([GWT](https://en.wikipedia.org/wiki/Google_Web_Toolkit), later angular). 
+Content and maps publishing and delivery in high load, distributed services environment. Cross-services refactorings and performance improvements. Data visualizations for ops purposes.
+
+<div style={{paddingTop: '5px', fontSize: '0.75em'}}>
+    <Tech items={['Java', 'GWT', 'angular']} />
+</div>
+
+{/* ([GWT](https://en.wikipedia.org/wiki/Google_Web_Toolkit), later angular).  */}
 
 ----
 
-Before 2011 - Kyiv, UA. <span class="no-print">See LinkedIn ⤵️</span> <span class="print-only">https://www.linkedin.com/in/mgurov</span>
+Before 2011 - Kyiv, UA <span class="no-print">See LinkedIn ⤵️</span> <span class="print-only">https://www.linkedin.com/in/mgurov</span>
 
 {/* In particular, [Encodify](https://www.encodify.com/) · 2005-2011  - grew to Team Lead while developing a creative media workflow platform with rich customization and numerous on-premise deployments.   */}
 

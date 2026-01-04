@@ -1,8 +1,23 @@
 ---
 interface Props {
     hidden?: boolean;
+    items?: string[];
 }
-const { hidden = false } = Astro.props;
+const { hidden = false, items = [
+    "Java",
+    "Kotlin (back-end)",
+    "Go",
+    "Typescript",
+    "React",
+    "Python",
+    "Playwright",
+    "Postgres",
+    "Docker",
+    "GCP (BigQuery, PubSub)",
+    "AWS (DynamoDB, SNS/SQS)",
+    "Kafka",
+    "Kubernetes",
+] } = Astro.props;
 if (hidden) {
     return;
 }
@@ -46,19 +61,9 @@ if (hidden) {
 
 <separated-list>
     <ul>
-        <li>Java</li>
-        <li>Kotlin (back-end)</li>
-        <li>Playwright</li>
-        <li>Typescript</li>
-        <li>React</li>
-        <li>Python</li>
-        <li>Go</li>
-        <li>Postgres</li>
-        <li>Docker</li>
-        <li>GCP (BigQuery, PubSub)</li>
-        <li>AWS (DynamoDB, SNS/SQS)</li>
-        <li>Kafka</li>
-        <li>Kubernetes</li>
+        {items.map((item) => (
+            <li>{item}</li>
+        ))}
     </ul>
 </separated-list>
 
