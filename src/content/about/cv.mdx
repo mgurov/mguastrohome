@@ -15,7 +15,7 @@ export const printMode = import.meta.env.PUBLIC_PRINT_MODE;
 
 {/* software • delivery • continuous  • back-end  • front-end • data  */}
 
-<DetailsHeader hidden={!printMode} />
+{/* <DetailsHeader hidden={!printMode} /> */}
 <SummaryBullets hidden={printMode} />
 
 
@@ -47,17 +47,18 @@ Joined **Integrations** team to build an interface with Dutch road authorities (
 
 [bol.com](https://bol.com) Utrecht NL · e-commerce · 2015-2020 
 
-Informal **liaison and advocate** between feature and platform / DX teams. Transition from Oracle-backed monoliths to Java and Kotlin microservices. From on-premise to cloud (GCP). Created popular internal dev tools (Go, React). Started [public speaking](https://mgurov.github.io/talks/) at conferences and podcasts. 
+
+Informal **liaison and advocate** between feature and platform / DX teams. As a feature teams representative, actively participated in transition from Oracle-backed monoliths to Java and Kotlin microservices, from on-premise to cloud (GCP) infrastructure. Created popular internal dev tools (Go, React). Numerous [public speaking](https://mgurov.github.io/talks/) engagements at conferences and podcasts. 
 
 Teams & domains: 
 
-A **data-in-flight** platform team building bridge between operational and data-lake databases. Joined to develop and spread in usage a custom built **continuous data quality monitoring** tool. Built a tailored automated testing process that allowed to practice near continuous delivery to numerous installations across the organization. 
+A **data-in-flight** platform team bridging between operational and data-lake databases. Joined to develop and spread in usage a custom built **continuous data quality monitoring** tool. Built a tailored automated testing process that allowed to practice near continuous delivery to numerous installations across the organization. 
 
 Purchasing & Supplier accounting. Recovered the domain from technical downfall. Brought **testing and observability** practices to the level that allowed to move to **[trunk-based continuous delivery development](/talks/trunk-based-delivery/)**. Designed and built cross-dock service in close iterative collaboration with business stakeholders, featuring custom-built UIs for requirements analysis and observability, as well as [extensive testing on production via gradual process takeover](/talks/testing-on-production/). 
 
-Logistics via Bol - a team spearheading migration from oracle to postgres and to microservices. Revolutionized dev testing by shortening feedback loops with docker.
+Logistics via Bol - a "startup within" business+tech team. *Revolutionized dev testing by shortening feedback loops with docker*. Learned to build features on production.
 
-<span class="no-print">[more about the great time at bol...](/about/bol)</span>
+{printMode && <a href="/about/bol">more about the great time at bol...</a>}
 
 ---
 
