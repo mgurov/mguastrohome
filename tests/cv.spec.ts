@@ -17,9 +17,9 @@ test('cv page displays CV title and key sections', async ({ page }) => {
 });
 
 for (const [text, url] of [
-  ['comprehensive and meaningful test coverage', "/talks/app-testing-with-playwright/"],
-  ['trunk-based continuous delivery development', "/talks/trunk-based-delivery/"],
-  ['extensive testing on production via gradual process takeover', "/talks/testing-on-production/"],
+  ['comprehensive and meaningful test coverage', "https://mgurov.github.io/talks/app-testing-with-playwright/"],
+  ['trunk-based continuous delivery development', "https://mgurov.github.io/talks/trunk-based-delivery/"],
+  ['extensive testing on production via gradual process takeover', "https://mgurov.github.io/talks/testing-on-production/"],
   ['more about the great time at bol', "/about/bol"],
 ]) {
   test(`can follow ${text} link`, async ({ page }) => {
