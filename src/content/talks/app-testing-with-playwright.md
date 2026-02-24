@@ -19,6 +19,10 @@ Ktor will be used to demonstrate this technique for a Spring Boot backend applic
 
 https://engineering.atspotify.com/2018/01/testing-of-microservices
 
+#### Future
+
+April the 15th 2026 [Vienna React Meetup](https://www.meetup.com/reactvienna/events/) - FE-focused
+
 #### Past
 
 May 2025 [Testnet voorjaarsevenement 2025](https://www.testnet.org/evenement/entry/25926/) – [code](https://github.com/mgurov/remix-router-tutorial-playwright/tree/talks/testnet_2025_05_14) – [slides](https://www.slideshare.net/slideshow/20250514-isolate-it-hermetic-testing-with-playwright-pdf/279293706) In collaboration with [@Joost van Wollingen](https://www.linkedin.com/in/joostvanwollingen/) 
